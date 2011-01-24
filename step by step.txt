@@ -1,0 +1,26 @@
+-----------------------------
+Jan 24, 2011
+
+create
+  $ mkdir parkerhill
+  $ cd parkerhill
+  $ git clone  git@github.com:linoj/starter3.git
+  move everything from starter3/ . except .git
+  $ mv starter3/* .
+  $ mv starter3/.* .
+  $ rm -rf .git
+  $ rmdir starter3
+
+  $ cd . #for rvm
+  
+initial setup
+  $ rake db:migrate
+  
+config
+  config/app_config.yml
+  spec/mailers/user_mailer_spec.rb
+  replace appname
+    features/page_features/contact_form.feature
+    features/user_features/signup.feature
+  $ rake spec
+  $ rake features  
