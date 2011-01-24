@@ -24,3 +24,15 @@ config
     features/user_features/signup.feature
   $ rake spec
   $ rake features  
+  
+initial git and deploy
+  $ git init
+  $ git add .
+  $ git commit -m "first commit"
+  
+  $ heroku create
+  $ heroku stack:migrate bamboo-mri-1.9.2
+  $ heroku config:add BUNDLE_WITHOUT="development:test:cucumber"
+  $ git push heroku master
+  
+  temporary url: http://floating-meadow-14.heroku.com/
