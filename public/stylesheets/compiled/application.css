@@ -1,0 +1,385 @@
+/* line 108, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+/* incase an inverted custom gradient isn't specified */
+/* line 176, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, .fancy-button-base, #home_page #overview .menu a {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('/images/button_bg.png?1295875236') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+}
+/* line 165, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, .fancy-button-base::-moz-focus-inner, #home_page #overview .menu a::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, .fancy-button-base:focus, #home_page #overview .menu a:focus {
+  outline: none;
+}
+
+/* line 8, ../../../app/stylesheets/partials/_fancy-button.sass */
+.fancy-button-base {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #989898), color-stop(10%, #6a6a6a), color-stop(50%, #3c3c3c), color-stop(50%, #353535), color-stop(100%, #4e4e4e));
+  background-image: -moz-linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  background-image: linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  border-color: #1e1e1e;
+  text-shadow: #040404 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-base, .fancy-button-base:visited {
+  color: white;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-base:hover, .fancy-button-base:focus {
+  background-color: #3c3c3c;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #919191), color-stop(10%, #636363), color-stop(50%, #353535), color-stop(50%, #2d2d2d), color-stop(100%, #474747));
+  background-image: -moz-linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  background-image: linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  border-color: #161616;
+  text-shadow: black 0px 1px 1px;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-base:hover, .fancy-button-base:hover:visited, .fancy-button-base:focus, .fancy-button-base:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-base:active {
+  background-color: #353535;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #353535), color-stop(30%, #3a3a3a), color-stop(50%, #303030), color-stop(50%, #282828), color-stop(100%, #494949));
+  background-image: -moz-linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  background-image: linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  border-color: #0e0e0e;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-base:active, .fancy-button-base:active:visited {
+  color: white;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+/* line 9, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+/* line 13, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form .div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+/* line 17, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+/* line 22, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+/* line 27, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form .error {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #D00;
+  display: block;
+}
+/* line 35, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+/* line 44, ../../../app/stylesheets/partials/_simple_form.scss */
+.simple_form legend {
+  padding-left: 120px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 1, ../../../app/stylesheets/partials/_utility.scss */
+.float_left {
+  float: left;
+}
+
+/* line 2, ../../../app/stylesheets/partials/_utility.scss */
+.float_right {
+  float: right;
+}
+
+/* line 4, ../../../app/stylesheets/partials/_utility.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 5, ../../../app/stylesheets/partials/_utility.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 6, ../../../app/stylesheets/partials/_utility.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 8, ../../../app/stylesheets/partials/_utility.scss */
+.grayed {
+  color: #aaa;
+}
+
+/* line 16, ../../../app/stylesheets/partials/_utility.scss */
+a.button_link {
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 0 5px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+/* line 16, ../../../app/stylesheets/application.scss */
+body {
+  background-color: black;
+  font-family: Lucida Grande,Verdana,Arial,Sans-serif;
+  margin: 0;
+}
+
+/* line 22, ../../../app/stylesheets/application.scss */
+#container {
+  width: 950px;
+  margin: auto;
+  padding: 20px;
+  background-color: black;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 32, ../../../app/stylesheets/application.scss */
+#home_page #container {
+  background: url("/images/home_bkgd.jpg") 0 0 no-repeat black;
+  position: relative;
+  min-height: 500px;
+}
+
+/* line 37, ../../../app/stylesheets/application.scss */
+#home_page #content {
+  margin-right: 137px;
+  position: relative;
+}
+
+/* line 42, ../../../app/stylesheets/application.scss */
+#home_page .company {
+  text-align: right;
+  color: #ff0;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-right: -5px;
+}
+/* line 50, ../../../app/stylesheets/application.scss */
+#home_page .byline {
+  text-align: right;
+  color: #f60;
+  font-size: 18px;
+}
+/* line 55, ../../../app/stylesheets/application.scss */
+#home_page #overview {
+  margin: 50px 0 0 210px;
+  width: 600px;
+  background-color: #333;
+}
+/* line 63, ../../../app/stylesheets/application.scss */
+#home_page #overview > div {
+  background-color: #333;
+  color: #ff0;
+  padding: 1em 1em 1em 45px;
+  border-bottom: 3px solid black;
+}
+/* line 68, ../../../app/stylesheets/application.scss */
+#home_page #overview > div h4 {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+/* line 73, ../../../app/stylesheets/application.scss */
+#home_page #overview h3 {
+  height: 35px;
+  border-bottom: 3px solid black;
+  padding: 0 0 0 45px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 81, ../../../app/stylesheets/application.scss */
+#home_page #overview h3 a {
+  padding-top: 5px;
+}
+/* line 85, ../../../app/stylesheets/application.scss */
+#home_page #overview h3:focus, #home_page #overview h3:active {
+  outline: none;
+}
+/* line 88, ../../../app/stylesheets/application.scss */
+#home_page #overview #who_header {
+  background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
+  color: #390;
+}
+/* line 94, ../../../app/stylesheets/application.scss */
+#home_page #overview #what_header {
+  background: url("/images/yellow_wave.jpg") 0 0 no-repeat black;
+  color: #09c;
+}
+/* line 100, ../../../app/stylesheets/application.scss */
+#home_page #overview #how_header {
+  background: url("/images/red_wave.jpg") 0 0 no-repeat black;
+  color: #999;
+}
+/* line 106, ../../../app/stylesheets/application.scss */
+#home_page #overview .menu {
+  padding-top: 1em;
+  text-align: center;
+}
+/* line 114, ../../../app/stylesheets/application.scss */
+#home_page #overview .menu a {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #989898), color-stop(10%, #6a6a6a), color-stop(50%, #3c3c3c), color-stop(50%, #353535), color-stop(100%, #4e4e4e));
+  background-image: -moz-linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  background-image: linear-gradient(top, #989898 0%, #6a6a6a 10%, #3c3c3c 50%, #353535 50%, #4e4e4e 100%);
+  border-color: #1e1e1e;
+  text-shadow: #040404 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.267) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#home_page #overview .menu a, #home_page #overview .menu a:visited {
+  color: white;
+}
+/* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#home_page #overview .menu a:hover, #home_page #overview .menu a:focus {
+  background-color: #3c3c3c;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #919191), color-stop(10%, #636363), color-stop(50%, #353535), color-stop(50%, #2d2d2d), color-stop(100%, #474747));
+  background-image: -moz-linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  background-image: linear-gradient(top, #919191 0%, #636363 10%, #353535 50%, #2d2d2d 50%, #474747 100%);
+  border-color: #161616;
+  text-shadow: black 0px 1px 1px;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#home_page #overview .menu a:hover, #home_page #overview .menu a:hover:visited, #home_page #overview .menu a:focus, #home_page #overview .menu a:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#home_page #overview .menu a:active {
+  background-color: #353535;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #353535), color-stop(30%, #3a3a3a), color-stop(50%, #303030), color-stop(50%, #282828), color-stop(100%, #494949));
+  background-image: -moz-linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  background-image: linear-gradient(top, #353535 0%, #3a3a3a 30%, #303030 50%, #282828 50%, #494949 100%);
+  border-color: #0e0e0e;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+  box-shadow: #1e1e1e 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#home_page #overview .menu a:active, #home_page #overview .menu a:active:visited {
+  color: white;
+}
+/* line 121, ../../../app/stylesheets/application.scss */
+#home_page #contact {
+  margin-top: 20px;
+  height: 50px;
+}
+/* line 124, ../../../app/stylesheets/application.scss */
+#home_page #contact a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: url("/images/contact.jpg") 0 0 no-repeat black;
+  position: absolute;
+  right: 0;
+}
+/* line 132, ../../../app/stylesheets/application.scss */
+#home_page #contact a:hover {
+  background: url("/images/contact_glow.jpg") 0 0 no-repeat black;
+}
+/* line 135, ../../../app/stylesheets/application.scss */
+#home_page #contact span {
+  margin-left: -2000px;
+}
+
+/* line 141, ../../../app/stylesheets/application.scss */
+footer {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  color: #444;
+}
+/* line 146, ../../../app/stylesheets/application.scss */
+footer .copyright {
+  padding-left: 1em;
+}

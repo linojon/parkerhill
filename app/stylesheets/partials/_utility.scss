@@ -1,10 +1,22 @@
-
-th, td {
-  text-align: center; 
-}
-
 .float_left { float:left; }
+.float_right { float:right; }
+
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
 
+.grayed { color: #aaa;}
+
+@mixin drop_shadow {
+  // stupid one for now, improve later
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+}
+
+a.button_link {
+  text-align: center;
+  font-weight: bold;
+  padding: 3px 0 5px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}

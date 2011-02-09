@@ -1,0 +1,150 @@
+@import "compass";
+@include reset-html5;
+@import "partials/fancy-button";
+@import "partials/simple_form";
+@import "partials/utility";
+
+// colors
+$desktop_bkgd: #000;
+$page_bkgd: #000;
+$footer_bkgd: #000;
+$footer_color: #888;
+
+// layout
+$page_width: 950px;
+
+body {
+  background-color: $desktop_bkgd;  
+  font-family: Lucida Grande,Verdana,Arial,Sans-serif;
+  margin: 0;
+}
+
+#container {
+  width: $page_width;
+  margin: auto;
+  padding: 20px;
+  
+  background-color: $page_bkgd;
+  @include clearfix;
+}
+
+// pages
+#home_page #container {
+  background: url("/images/home_bkgd.jpg") 0 0 no-repeat $page_bkgd;
+  position: relative;
+  min-height: 500px;
+}
+#home_page #content {
+  margin-right: 137px;
+  position: relative;
+}
+#home_page {
+  .company {
+    text-align: right;
+    color: #ff0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: -5px;
+  }
+  .byline {
+    text-align: right;
+    color: #f60;
+    font-size: 18px;
+  }
+  #overview {
+    //position: absolute;
+    //top: 135px;
+    //left: 210px;
+    margin: 50px 0 0 210px;
+    width: 600px;
+    //height: 400px;
+    background-color: #333;
+    > div {
+      background-color: #333;
+      color: #ff0;
+      padding: 1em 1em 1em 45px;
+      border-bottom: 3px solid black;
+      h4 {
+        margin: 0 0 1em 0;
+        padding: 0;
+      }
+    }
+    h3 {
+      height: 35px; //total 40px
+      border-bottom: 3px solid black;
+      padding: 0 0 0 45px;
+      margin: 0;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: bold;
+      a {
+        padding-top: 5px;
+      }
+    }
+    h3:focus, h3:active {
+      outline: none;
+    }
+    #who_header {
+      background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
+      color: #390;    
+    }
+    #who {
+    }
+    #what_header {
+      background: url("/images/yellow_wave.jpg") 0 0 no-repeat #000;
+      color: #09c;    
+    }
+    #what {
+    }
+    #how_header {
+      background: url("/images/red_wave.jpg") 0 0 no-repeat #000;
+      color: #999;    
+    }
+    #how {
+    }
+    .menu {
+      //@include inline-block-list;
+      //ul {
+      //  padding-left: 0;
+      //  text-align: center;
+      //}
+      padding-top: 1em;
+      text-align: center;
+      a {
+        $fb-font-size: 12px;
+        @include fancy-button;
+      }
+    }
+  }
+
+  #contact {
+    margin-top: 20px;
+    height: 50px;
+    a {
+     display: block;
+     width: 150px;
+     height: 50px;
+     background: url("/images/contact.jpg") 0 0 no-repeat black; 
+     position: absolute;
+     right: 0;
+    }
+    a:hover {
+      background: url("/images/contact_glow.jpg") 0 0 no-repeat black; 
+    }
+    span {
+      margin-left: -2000px;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  color: #444;
+  .copyright {
+    padding-left: 1em;
+  }
+}
+

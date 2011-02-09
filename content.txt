@@ -1,0 +1,45 @@
+
+Who Am I?
+
+  Web applications developer with expertise with a broad range of software and Internet technologies.
+
+  I solve real world problems with practical yet elegant user-centric solutions based on business priorities. 
+
+
+What Is A Web App?
+
+  Sometimes I explain it this way: 
+    A simple website is like a brochure which promotes a product or service. A web app --is-- the product or service.
+
+
+
+Who Are You?
+  - A business with the need for a 
+
+
+
+What I Can Do For You
+
+
+
+Technical Skills
+
+  Expertise with a broad range of software and Internet technologies, including Ruby on Rails, jQuery, and RSpec.
+  
+  I subscribe to agile, behavior driven (BDD), TATFT, DRY, progressive enhancement, “Don't make me think”, and open source approaches to software development.
+  
+  [paste from resume]
+  
+  
+Client and Project Portfolio
+  31North
+  ReviewRamp
+  WindAction
+  CareShare
+  AlumBiz
+  
+  Open source projects
+    ...
+    
+    
+    dynamic data    social networking   content management    

@@ -1,3 +1,16 @@
 %footer
-  .copyright
-    copyright &copy; 2011 #{APP_CONFIG[:company_name]}
+  #benny
+    = image_tag "/images/rooster.jpg"
+
+  #footer{:style => 'display:none'}
+    .copyright
+      copyright &copy; 2011 Parkerhill Technology Group LLC
+      -# #{APP_CONFIG[:company_name]}
+
+-# content_for :javascript_ready do
+  :plain
+:javascript
+    $("#benny > img").click(function(){
+      $("#footer").toggle();
+    });
+    

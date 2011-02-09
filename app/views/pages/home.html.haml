@@ -1,3 +1,55 @@
-%h1
-  Welcome home
+- body_id 'home_page'
+%head
+  .company Parkerhill Tech
+  .byline web applications for business
+
+#overview
+  %h3#who_header
+    %a{:ref => "#"} Who
+  #who
+    %h4 WHO I AM
+    %p
+      Hello, my name is Jon Linowes.
+      I build web applications.
+    %p
+      I have expertise with a broad range of software and Internet technologies.
+    %p
+      I solve real world problems with practical yet elegant user-centric solutions based on business priorities. 
+    .menu
+      = link_to 'technical resume', '#'
+   
+  %h3#what_header
+    %a{:ref => "#"} What
+  #what
+    %h4 WHAT I DO
+    %p
+      A web application is a dynamic website backed by a database, personalized for your visitors, and valuable for the services it delivers.
+    %p
+      The process can be summed up in 3 words: Design. Build. Deploy. (repeat)
+    .menu
+      = link_to 'learn more', '#'
+  
+  %h3#how_header
+    %a{:ref => "#"} How
+  #how
+    %h4 HOW I HELP YOU
+    %p
+      My strong background in technical implementation, project leadership, and entrepreneurial management means I can wear many hats, as situations demand. My role in your project may include:
+    %ul
+      %li Entire project manager: soup to nuts
+      %li Information architecture and user interface design
+      %li Software engineering and development
+      %li Implementation sub-contractor
+    .menu
+      = link_to 'portfolio', '#'
+      
+#contact
+  = link_to new_contact_form_path do
+    %span contact
+    
+- content_for :javascript_ready do
+  :plain
+    $("#overview").accordion({
+      event: "mouseover"
+    });
   
