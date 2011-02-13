@@ -157,17 +157,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 /* line 4, ../../../app/stylesheets/partials/_utility.scss */
-.align-left {
+.align_left {
   text-align: left;
 }
 
 /* line 5, ../../../app/stylesheets/partials/_utility.scss */
-.align-right {
+.align_right {
   text-align: right;
 }
 
 /* line 6, ../../../app/stylesheets/partials/_utility.scss */
-.align-center {
+.align_center {
   text-align: center;
 }
 
@@ -185,6 +185,11 @@ a.button_link {
   margin-bottom: 6px;
 }
 
+/* line 24, ../../../app/stylesheets/partials/_utility.scss */
+a img {
+  border: none;
+}
+
 /* line 16, ../../../app/stylesheets/application.scss */
 body {
   background-color: black;
@@ -193,30 +198,7 @@ body {
 }
 
 /* line 22, ../../../app/stylesheets/application.scss */
-#container {
-  width: 950px;
-  margin: auto;
-  padding: 20px;
-  background-color: black;
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 32, ../../../app/stylesheets/application.scss */
-#home_page #container {
-  background: url("/images/home_bkgd.jpg") 0 0 no-repeat black;
-  position: relative;
-  min-height: 500px;
-}
-
-/* line 37, ../../../app/stylesheets/application.scss */
-#home_page #content {
-  margin-right: 137px;
-  position: relative;
-}
-
-/* line 42, ../../../app/stylesheets/application.scss */
-#home_page .company {
+.company {
   text-align: right;
   color: #ff0;
   font-size: 28px;
@@ -224,31 +206,68 @@ body {
   letter-spacing: 5px;
   margin-right: -5px;
 }
-/* line 50, ../../../app/stylesheets/application.scss */
-#home_page .byline {
+
+/* line 30, ../../../app/stylesheets/application.scss */
+.byline {
   text-align: right;
   color: #f60;
   font-size: 18px;
 }
-/* line 55, ../../../app/stylesheets/application.scss */
-#home_page #overview {
+
+/* line 35, ../../../app/stylesheets/application.scss */
+.home_link {
+  position: fixed;
+  left: 150px;
+  top: 20px;
+}
+/* line 40, ../../../app/stylesheets/application.scss */
+.home_link a {
+  color: #aaa;
+  text-decoration: none;
+}
+/* line 44, ../../../app/stylesheets/application.scss */
+.home_link a:hover {
+  color: #f00;
+}
+
+/* line 49, ../../../app/stylesheets/application.scss */
+#container {
+  width: 950px;
+  margin: auto;
+  padding: 20px;
+  background: url("/images/home_bkgd.jpg") 0 0 no-repeat black;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 62, ../../../app/stylesheets/application.scss */
+#content {
+  margin-right: 137px;
+  position: relative;
+}
+
+/* line 67, ../../../app/stylesheets/application.scss */
+#overview {
   margin: 50px 0 0 210px;
   width: 600px;
   background-color: #333;
 }
-/* line 63, ../../../app/stylesheets/application.scss */
+
+/* line 75, ../../../app/stylesheets/application.scss */
 #home_page #overview > div {
   background-color: #333;
   color: #ff0;
   padding: 1em 1em 1em 45px;
   border-bottom: 3px solid black;
 }
-/* line 68, ../../../app/stylesheets/application.scss */
+/* line 80, ../../../app/stylesheets/application.scss */
 #home_page #overview > div h4 {
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 73, ../../../app/stylesheets/application.scss */
+/* line 85, ../../../app/stylesheets/application.scss */
 #home_page #overview h3 {
   height: 35px;
   border-bottom: 3px solid black;
@@ -258,35 +277,35 @@ body {
   font-size: 24px;
   font-weight: bold;
 }
-/* line 81, ../../../app/stylesheets/application.scss */
+/* line 93, ../../../app/stylesheets/application.scss */
 #home_page #overview h3 a {
   padding-top: 5px;
 }
-/* line 85, ../../../app/stylesheets/application.scss */
+/* line 97, ../../../app/stylesheets/application.scss */
 #home_page #overview h3:focus, #home_page #overview h3:active {
   outline: none;
 }
-/* line 88, ../../../app/stylesheets/application.scss */
+/* line 100, ../../../app/stylesheets/application.scss */
 #home_page #overview #who_header {
   background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
   color: #390;
 }
-/* line 94, ../../../app/stylesheets/application.scss */
+/* line 106, ../../../app/stylesheets/application.scss */
 #home_page #overview #what_header {
   background: url("/images/yellow_wave.jpg") 0 0 no-repeat black;
   color: #09c;
 }
-/* line 100, ../../../app/stylesheets/application.scss */
+/* line 112, ../../../app/stylesheets/application.scss */
 #home_page #overview #how_header {
   background: url("/images/red_wave.jpg") 0 0 no-repeat black;
   color: #999;
 }
-/* line 106, ../../../app/stylesheets/application.scss */
+/* line 118, ../../../app/stylesheets/application.scss */
 #home_page #overview .menu {
   padding-top: 1em;
   text-align: center;
 }
-/* line 114, ../../../app/stylesheets/application.scss */
+/* line 126, ../../../app/stylesheets/application.scss */
 #home_page #overview .menu a {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -349,12 +368,12 @@ body {
 #home_page #overview .menu a:active, #home_page #overview .menu a:active:visited {
   color: white;
 }
-/* line 121, ../../../app/stylesheets/application.scss */
+/* line 133, ../../../app/stylesheets/application.scss */
 #home_page #contact {
   margin-top: 20px;
   height: 50px;
 }
-/* line 124, ../../../app/stylesheets/application.scss */
+/* line 136, ../../../app/stylesheets/application.scss */
 #home_page #contact a {
   display: block;
   width: 150px;
@@ -363,23 +382,70 @@ body {
   position: absolute;
   right: 0;
 }
-/* line 132, ../../../app/stylesheets/application.scss */
+/* line 144, ../../../app/stylesheets/application.scss */
 #home_page #contact a:hover {
   background: url("/images/contact_glow.jpg") 0 0 no-repeat black;
 }
-/* line 135, ../../../app/stylesheets/application.scss */
+/* line 147, ../../../app/stylesheets/application.scss */
 #home_page #contact span {
   margin-left: -2000px;
 }
 
-/* line 141, ../../../app/stylesheets/application.scss */
+/* line 154, ../../../app/stylesheets/application.scss */
+#resume_page #overview {
+  margin-right: 140px;
+  width: 640px;
+  padding: 1em;
+  background-color: #ddc;
+  color: #333;
+}
+/* line 160, ../../../app/stylesheets/application.scss */
+#resume_page #overview p, #resume_page #overview ul {
+  font-size: 80%;
+}
+/* line 163, ../../../app/stylesheets/application.scss */
+#resume_page #overview li {
+  margin-bottom: 1em;
+}
+/* line 166, ../../../app/stylesheets/application.scss */
+#resume_page #overview .section {
+  position: relative;
+  border-bottom: 4px solid #aaa;
+  padding: 1em 0;
+}
+/* line 171, ../../../app/stylesheets/application.scss */
+#resume_page #overview .pdf_link {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+/* line 174, ../../../app/stylesheets/application.scss */
+#resume_page #overview .pdf_link a {
+  display: block;
+}
+/* line 178, ../../../app/stylesheets/application.scss */
+#resume_page #overview h4 {
+  font-size: 35px;
+  color: #BBBBBB;
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -moz-transform-origin: 0 65px;
+  -webkit-transform-origin: 0 65px;
+  -o-transform-origin: 0 65px;
+  transform-origin: 0 65px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 188, ../../../app/stylesheets/application.scss */
 footer {
   position: fixed;
   bottom: 5px;
   left: 0;
   color: #444;
 }
-/* line 146, ../../../app/stylesheets/application.scss */
+/* line 193, ../../../app/stylesheets/application.scss */
 footer .copyright {
   padding-left: 1em;
 }

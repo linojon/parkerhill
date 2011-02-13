@@ -1,9 +1,9 @@
 .float_left { float:left; }
 .float_right { float:right; }
 
-.align-left { text-align: left; }
-.align-right { text-align: right; }
-.align-center { text-align: center; }
+.align_left { text-align: left; }
+.align_right { text-align: right; }
+.align_center { text-align: center; }
 
 .grayed { color: #aaa;}
 
@@ -19,4 +19,8 @@ a.button_link {
   padding: 3px 0 5px;
   text-decoration: none;
   margin-bottom: 6px;
+}
+
+a img {
+  border: none;
 }

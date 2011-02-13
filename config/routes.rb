@@ -15,13 +15,14 @@ Starter3::Application.routes.draw do
   resources :password_resets
 
   match 'pages/:action', :controller => 'pages'
-  match 'dashboard' => 'pages#dashboard', :as => :dashboard
+  
+  match 'resume' => 'pages#resume', :as => :resume
+  
   match 'about' => 'pages#about', :as => :about
   #match 'contact' => 'pages#contact', :as => :contact
   resources :contact_forms, :only => [:new, :create]
 
   root :to => "pages#home"
-  
   
   
   # The priority is based upon order of creation:

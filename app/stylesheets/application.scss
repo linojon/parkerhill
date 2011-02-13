@@ -19,47 +19,59 @@ body {
   margin: 0;
 }
 
+.company {
+  text-align: right;
+  color: #ff0;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-right: -5px;
+}
+.byline {
+  text-align: right;
+  color: #f60;
+  font-size: 18px;
+}
+.home_link {
+  //float: left;
+  position: fixed;
+  left: 150px;
+  top: 20px;
+  a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #f00;
+  }
+}
+
 #container {
   width: $page_width;
   margin: auto;
   padding: 20px;
   
-  background-color: $page_bkgd;
-  @include clearfix;
-}
-
-// pages
-#home_page #container {
   background: url("/images/home_bkgd.jpg") 0 0 no-repeat $page_bkgd;
   position: relative;
   min-height: 500px;
+
+  //background-color: $page_bkgd;
+  @include clearfix;
 }
-#home_page #content {
+
+#content {
   margin-right: 137px;
   position: relative;
 }
-#home_page {
-  .company {
-    text-align: right;
-    color: #ff0;
-    font-size: 28px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-right: -5px;
-  }
-  .byline {
-    text-align: right;
-    color: #f60;
-    font-size: 18px;
-  }
-  #overview {
-    //position: absolute;
-    //top: 135px;
-    //left: 210px;
+
+#overview {
     margin: 50px 0 0 210px;
     width: 600px;
-    //height: 400px;
     background-color: #333;
+}
+
+#home_page {
+  #overview {
     > div {
       background-color: #333;
       color: #ff0;
@@ -134,6 +146,41 @@ body {
     }
     span {
       margin-left: -2000px;
+    }
+  }
+}
+
+#resume_page {
+  #overview {
+    margin-right: 140px;
+    width: 640px;
+    padding: 1em;
+    background-color: #ddc; //yellowish cream
+    color: #333;
+    p, ul {
+      font-size: 80%;
+    }
+    li {
+      margin-bottom: 1em;
+    }
+    .section {
+      position: relative;
+      border-bottom: 4px solid #aaa;
+      padding: 1em 0;
+    }
+    .pdf_link {
+      float: right;
+      margin: 0 0 1em 1em;
+      a {
+        display: block;
+      }
+    }
+    h4 {
+      font-size: 35px;
+      color: #BBBBBB;
+      @include rotate(-90deg, 0, 65px);
+      position: absolute;
+      bottom: 0;
     }
   }
 }
