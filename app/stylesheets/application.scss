@@ -64,9 +64,10 @@ body {
   position: relative;
 }
 
+$overview_width: 600px;
 #overview {
     margin: 50px 0 0 210px;
-    width: 600px;
+    width: $overview_width;
     background-color: #333;
 }
 
@@ -101,26 +102,15 @@ body {
       background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
       color: #390;    
     }
-    #who {
-    }
     #what_header {
       background: url("/images/yellow_wave.jpg") 0 0 no-repeat #000;
       color: #09c;    
-    }
-    #what {
     }
     #how_header {
       background: url("/images/red_wave.jpg") 0 0 no-repeat #000;
       color: #999;    
     }
-    #how {
-    }
     .menu {
-      //@include inline-block-list;
-      //ul {
-      //  padding-left: 0;
-      //  text-align: center;
-      //}
       padding-top: 1em;
       text-align: center;
       a {
@@ -182,6 +172,15 @@ body {
       position: absolute;
       bottom: 0;
     }
+  }
+}
+
+#carousel_page {
+  #carousel {
+    width: $overview_width; 
+    height: 300px;
+    //background: #000;
+    overflow: scroll;
   }
 }
 

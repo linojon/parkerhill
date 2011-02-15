@@ -248,26 +248,26 @@ body {
   position: relative;
 }
 
-/* line 67, ../../../app/stylesheets/application.scss */
+/* line 68, ../../../app/stylesheets/application.scss */
 #overview {
   margin: 50px 0 0 210px;
   width: 600px;
   background-color: #333;
 }
 
-/* line 75, ../../../app/stylesheets/application.scss */
+/* line 76, ../../../app/stylesheets/application.scss */
 #home_page #overview > div {
   background-color: #333;
   color: #ff0;
   padding: 1em 1em 1em 45px;
   border-bottom: 3px solid black;
 }
-/* line 80, ../../../app/stylesheets/application.scss */
+/* line 81, ../../../app/stylesheets/application.scss */
 #home_page #overview > div h4 {
   margin: 0 0 1em 0;
   padding: 0;
 }
-/* line 85, ../../../app/stylesheets/application.scss */
+/* line 86, ../../../app/stylesheets/application.scss */
 #home_page #overview h3 {
   height: 35px;
   border-bottom: 3px solid black;
@@ -277,35 +277,35 @@ body {
   font-size: 24px;
   font-weight: bold;
 }
-/* line 93, ../../../app/stylesheets/application.scss */
+/* line 94, ../../../app/stylesheets/application.scss */
 #home_page #overview h3 a {
   padding-top: 5px;
 }
-/* line 97, ../../../app/stylesheets/application.scss */
+/* line 98, ../../../app/stylesheets/application.scss */
 #home_page #overview h3:focus, #home_page #overview h3:active {
   outline: none;
 }
-/* line 100, ../../../app/stylesheets/application.scss */
+/* line 101, ../../../app/stylesheets/application.scss */
 #home_page #overview #who_header {
   background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
   color: #390;
 }
-/* line 106, ../../../app/stylesheets/application.scss */
+/* line 105, ../../../app/stylesheets/application.scss */
 #home_page #overview #what_header {
   background: url("/images/yellow_wave.jpg") 0 0 no-repeat black;
   color: #09c;
 }
-/* line 112, ../../../app/stylesheets/application.scss */
+/* line 109, ../../../app/stylesheets/application.scss */
 #home_page #overview #how_header {
   background: url("/images/red_wave.jpg") 0 0 no-repeat black;
   color: #999;
 }
-/* line 118, ../../../app/stylesheets/application.scss */
+/* line 113, ../../../app/stylesheets/application.scss */
 #home_page #overview .menu {
   padding-top: 1em;
   text-align: center;
 }
-/* line 126, ../../../app/stylesheets/application.scss */
+/* line 116, ../../../app/stylesheets/application.scss */
 #home_page #overview .menu a {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -368,12 +368,12 @@ body {
 #home_page #overview .menu a:active, #home_page #overview .menu a:active:visited {
   color: white;
 }
-/* line 133, ../../../app/stylesheets/application.scss */
+/* line 123, ../../../app/stylesheets/application.scss */
 #home_page #contact {
   margin-top: 20px;
   height: 50px;
 }
-/* line 136, ../../../app/stylesheets/application.scss */
+/* line 126, ../../../app/stylesheets/application.scss */
 #home_page #contact a {
   display: block;
   width: 150px;
@@ -382,16 +382,16 @@ body {
   position: absolute;
   right: 0;
 }
-/* line 144, ../../../app/stylesheets/application.scss */
+/* line 134, ../../../app/stylesheets/application.scss */
 #home_page #contact a:hover {
   background: url("/images/contact_glow.jpg") 0 0 no-repeat black;
 }
-/* line 147, ../../../app/stylesheets/application.scss */
+/* line 137, ../../../app/stylesheets/application.scss */
 #home_page #contact span {
   margin-left: -2000px;
 }
 
-/* line 154, ../../../app/stylesheets/application.scss */
+/* line 144, ../../../app/stylesheets/application.scss */
 #resume_page #overview {
   margin-right: 140px;
   width: 640px;
@@ -399,30 +399,30 @@ body {
   background-color: #ddc;
   color: #333;
 }
-/* line 160, ../../../app/stylesheets/application.scss */
+/* line 150, ../../../app/stylesheets/application.scss */
 #resume_page #overview p, #resume_page #overview ul {
   font-size: 80%;
 }
-/* line 163, ../../../app/stylesheets/application.scss */
+/* line 153, ../../../app/stylesheets/application.scss */
 #resume_page #overview li {
   margin-bottom: 1em;
 }
-/* line 166, ../../../app/stylesheets/application.scss */
+/* line 156, ../../../app/stylesheets/application.scss */
 #resume_page #overview .section {
   position: relative;
   border-bottom: 4px solid #aaa;
   padding: 1em 0;
 }
-/* line 171, ../../../app/stylesheets/application.scss */
+/* line 161, ../../../app/stylesheets/application.scss */
 #resume_page #overview .pdf_link {
   float: right;
   margin: 0 0 1em 1em;
 }
-/* line 174, ../../../app/stylesheets/application.scss */
+/* line 164, ../../../app/stylesheets/application.scss */
 #resume_page #overview .pdf_link a {
   display: block;
 }
-/* line 178, ../../../app/stylesheets/application.scss */
+/* line 168, ../../../app/stylesheets/application.scss */
 #resume_page #overview h4 {
   font-size: 35px;
   color: #BBBBBB;
@@ -438,14 +438,21 @@ body {
   bottom: 0;
 }
 
-/* line 188, ../../../app/stylesheets/application.scss */
+/* line 179, ../../../app/stylesheets/application.scss */
+#carousel_page #carousel {
+  width: 600px;
+  height: 300px;
+  overflow: scroll;
+}
+
+/* line 187, ../../../app/stylesheets/application.scss */
 footer {
   position: fixed;
   bottom: 5px;
   left: 0;
   color: #444;
 }
-/* line 193, ../../../app/stylesheets/application.scss */
+/* line 192, ../../../app/stylesheets/application.scss */
 footer .copyright {
   padding-left: 1em;
 }

@@ -6,4 +6,8 @@ class PagesController < ApplicationController
   def resume
     render
   end
+  
+  def portfolio
+    render
+  end
 end

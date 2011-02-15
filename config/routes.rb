@@ -17,6 +17,7 @@ Starter3::Application.routes.draw do
   match 'pages/:action', :controller => 'pages'
   
   match 'resume' => 'pages#resume', :as => :resume
+  match 'portfolio' => 'pages#portfolio', :as => :portfolio
   
   match 'about' => 'pages#about', :as => :about
   #match 'contact' => 'pages#contact', :as => :contact

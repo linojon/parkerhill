@@ -1,0 +1,39 @@
+- body_id 'portfolio_page'
+- content_for :javascript_includes do
+  = javascript_include_tag 'cloud-carousel.1.0.4.min'
+  = javascript_include_tag 'jquery.mousewheel.min'
+- content_for :javascript_ready do
+  $("#carousel").CloudCarousel({
+  xPos: 300,
+  yPos: 100,
+  autoRotate: 'left',
+  bringToFront: true,
+  mouseWheel: true,
+  minScale: 0.25, //0.5 default
+  reflHeight: 25,
+  reflGap: 5,
+  speed: 0.1, // 0.2 default
+  //buttonLeft: $("#left_but"),
+  //buttonRight: $("#right_but"),
+  //altBox: $("#alt_text"),
+  //titleBox: $("#title_text")
+  });
+
+%head
+  .home_link= link_to 'home', '/'
+  .company Jonathan S. Linowes
+  .byline website portfolio
+
+#overview
+  #carousel{ :style => "width: 600px; height: 400px; overflow:scroll"}
+    = image_tag "portfolio/windaction-thumb.jpg", :alt => "Image 1 description", :title => "Image 1 title", :class => 'cloudcarousel'
+    = image_tag "portfolio/alumbiz-thumb.jpg", :alt => "Image 2 description", :title => "Image 2 title", :class => 'cloudcarousel'
+    = image_tag "portfolio/careshare-thumb.jpg", :alt => "Image 3 description", :title => "Image 3 title", :class => 'cloudcarousel'
+    = image_tag "portfolio/husage-thumb.jpg", :alt => "Image 4 description", :title => "Image 4 title", :class => 'cloudcarousel'
+    = image_tag "portfolio/31north-thumb.jpg", :alt => "Image 5 description", :title => "Image 5 title", :class => 'cloudcarousel'
+  -#%input#left_but{ :type => :button, :value => "Left" }
+  -#%input#right_but{ :type => :button, :value => "Right" }
+  -#%p#title_text
+  -#%p#alt_text
+
+  

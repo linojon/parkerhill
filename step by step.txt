@@ -40,9 +40,54 @@ initial git and deploy
 -----------------------------
 2/7/2010
 
+2/12/2010
+  resume page with vertical text
+  
+2/13/2010
+  http://www.professorcloud.com/mainsite/carousel-integration.htm
+  
+  screen grabs:
+    browser size: 1020 x 800
+    crop to 
+  
 -----------------------------
 -----------------------------
 -----------------------------
 -----------------------------
 -----------------------------
 -----------------------------
+resume
+  support non-css3 browser
+  
+  add "more" with sections:
+      volunteer
+      personal
+      
+social
+  facebook "Like"
+  linked in profile
+  twitter follow
+  
+      
+portfolio
+    reviewramp
+    windaction
+    careshare
+    alumbiz
+    abi
+    31north
+    myvbi
+    husage
+    
+    gridify
+    
+  ?
+    formatastic renderers
+    saasramp
+    iwafetch
+    
+about this site
+  put link (button) under benny
+  - technology
+  - github link
+  
