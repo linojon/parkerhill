@@ -15,6 +15,6 @@ test:
   <<: *common
 
 production:
-  domain: example.com
+  domain: parkerhill.com
   <<: *common
 
