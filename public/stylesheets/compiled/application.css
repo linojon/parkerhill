@@ -410,21 +410,33 @@ input, textarea {
   color: #390;
 }
 /* line 143, ../../../app/stylesheets/application.scss */
+#home_page #main #who_header.ui-state-active {
+  color: #8f0;
+}
+/* line 146, ../../../app/stylesheets/application.scss */
 #home_page #main #what_header {
   background: url("/images/yellow_wave.jpg") 0 0 no-repeat black;
   color: #09c;
 }
-/* line 147, ../../../app/stylesheets/application.scss */
+/* line 150, ../../../app/stylesheets/application.scss */
+#home_page #main #what_header.ui-state-active {
+  color: #0cf;
+}
+/* line 153, ../../../app/stylesheets/application.scss */
 #home_page #main #how_header {
   background: url("/images/red_wave.jpg") 0 0 no-repeat black;
   color: #999;
 }
-/* line 153, ../../../app/stylesheets/application.scss */
+/* line 157, ../../../app/stylesheets/application.scss */
+#home_page #main #how_header.ui-state-active {
+  color: #fff;
+}
+/* line 162, ../../../app/stylesheets/application.scss */
 #home_page #contact {
   margin-top: 20px;
   height: 50px;
 }
-/* line 156, ../../../app/stylesheets/application.scss */
+/* line 165, ../../../app/stylesheets/application.scss */
 #home_page #contact a {
   display: block;
   width: 150px;
@@ -434,46 +446,46 @@ input, textarea {
   right: 0;
   outline: none;
 }
-/* line 165, ../../../app/stylesheets/application.scss */
+/* line 174, ../../../app/stylesheets/application.scss */
 #home_page #contact a:hover {
   background: url("/images/contact_glow.jpg") 0 0 no-repeat black;
 }
-/* line 168, ../../../app/stylesheets/application.scss */
+/* line 177, ../../../app/stylesheets/application.scss */
 #home_page #contact span {
   margin-left: -2000px;
 }
 
-/* line 175, ../../../app/stylesheets/application.scss */
+/* line 184, ../../../app/stylesheets/application.scss */
 #resume_page #main {
   margin-right: 140px;
   width: 640px;
   background-color: #ddc;
   color: #333;
 }
-/* line 180, ../../../app/stylesheets/application.scss */
+/* line 189, ../../../app/stylesheets/application.scss */
 #resume_page #main p, #resume_page #main ul {
   font-size: 80%;
 }
-/* line 183, ../../../app/stylesheets/application.scss */
+/* line 192, ../../../app/stylesheets/application.scss */
 #resume_page #main li {
   margin-bottom: 1em;
 }
-/* line 186, ../../../app/stylesheets/application.scss */
+/* line 195, ../../../app/stylesheets/application.scss */
 #resume_page #main .section {
   position: relative;
   border-bottom: 4px solid #aaa;
   padding: 1em 0;
 }
-/* line 191, ../../../app/stylesheets/application.scss */
+/* line 200, ../../../app/stylesheets/application.scss */
 #resume_page #main .pdf_link {
   float: right;
   margin: 0 0 1em 1em;
 }
-/* line 194, ../../../app/stylesheets/application.scss */
+/* line 203, ../../../app/stylesheets/application.scss */
 #resume_page #main .pdf_link a {
   display: block;
 }
-/* line 198, ../../../app/stylesheets/application.scss */
+/* line 207, ../../../app/stylesheets/application.scss */
 #resume_page #main h4 {
   font-size: 35px;
   color: #BBBBBB;
@@ -489,36 +501,36 @@ input, textarea {
   bottom: 0;
 }
 
-/* line 209, ../../../app/stylesheets/application.scss */
+/* line 218, ../../../app/stylesheets/application.scss */
 #carousel_page #main {
   background-color: #333;
   padding: 0;
 }
-/* line 213, ../../../app/stylesheets/application.scss */
+/* line 222, ../../../app/stylesheets/application.scss */
 #carousel_page #carousel {
   width: 600px;
   height: 300px;
   overflow: scroll;
 }
 
-/* line 221, ../../../app/stylesheets/application.scss */
+/* line 230, ../../../app/stylesheets/application.scss */
 footer {
   position: fixed;
   bottom: 5px;
   left: 0;
   color: #444;
 }
-/* line 226, ../../../app/stylesheets/application.scss */
+/* line 235, ../../../app/stylesheets/application.scss */
 footer .copyright {
   padding-left: 1em;
 }
 
-/* line 232, ../../../app/stylesheets/application.scss */
+/* line 241, ../../../app/stylesheets/application.scss */
 #contact_page #main {
   background-color: #333;
   color: #aaa;
 }
-/* line 235, ../../../app/stylesheets/application.scss */
+/* line 244, ../../../app/stylesheets/application.scss */
 #contact_page #main a {
   color: #aaa;
 }

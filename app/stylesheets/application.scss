@@ -138,15 +138,24 @@ $main_width: 600px;
     }
     #who_header {
       background: url("/images/blue_wave.jpg") 0 0 no-repeat black;
-      color: #390;    
+      color: #390;  
+    }
+    #who_header.ui-state-active {
+      color: #8f0;
     }
     #what_header {
       background: url("/images/yellow_wave.jpg") 0 0 no-repeat #000;
-      color: #09c;    
+      color: #09c;  
+    }
+    #what_header.ui-state-active {
+      color: #0cf;
     }
     #how_header {
       background: url("/images/red_wave.jpg") 0 0 no-repeat #000;
-      color: #999;    
+      color: #999; 
+    }
+    #how_header.ui-state-active {
+      color: #fff;
     }
   }
 
