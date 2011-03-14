@@ -52,7 +52,7 @@ Parkerhill::Application.configure do
   ActionMailer::Base.smtp_settings = {
     :address => 'smtp.gmail.com',
     :port => 587,
-    :domain => APP_CONFIG[:host],
+    :domain => 'parkerhill.com', #APP_CONFIG[:host], (not initized yet!)
     :user_name => 'parkerhilltech',
     :password => 'parker286',
     :authentication => 'plain',
