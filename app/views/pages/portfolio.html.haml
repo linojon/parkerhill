@@ -19,12 +19,9 @@
   //titleBox: $("#title_text")
   });
 
-%head
-  .home_link= link_to 'home', '/'
-  .company Jonathan S. Linowes
-  .byline website portfolio
+= render :partial => 'page_head', :locals => {:byline => 'website portfolio'}
 
-#overview
+#main
   #carousel{ :style => "width: 600px; height: 400px; overflow:scroll"}
     = image_tag "portfolio/windaction-thumb.jpg", :alt => "Image 1 description", :title => "Image 1 title", :class => 'cloudcarousel'
     = image_tag "portfolio/alumbiz-thumb.jpg", :alt => "Image 2 description", :title => "Image 2 title", :class => 'cloudcarousel'

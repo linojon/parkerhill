@@ -1,6 +1,19 @@
-- title "Contact Us"
-= simple_form_for @contact_form do |form|
-  = form.input :name
-  = form.input :email
-  = form.input :message, :as => :text
-  = form.button :submit, :value => 'Send'
+- body_id 'contact_page'
+= render :partial => 'pages/page_head', :locals => {:byline => 'contact me'}
+#main
+  %p
+    Hi. Please use this form to contact me. 
+    Or feel free to just  
+    = mail_to "jonathan@parkerhill.com", 'email me', :encode => :hex
+  = simple_form_for @contact_form do |form|
+    = form.input :name, :input_html => {:size => 40}
+    = form.input :email, :input_html => {:size => 40}
+    = form.input :message, :as => :text, :input_html => {:cols => 50}
+    =# form.simple_captcha
+    .input{ :style => "min-height: 130px" }
+      %label Verify
+      = recaptcha_tags :display => {:theme => 'blackglass'}
+      - if @contact_form.errors[:recaptcha]
+        %span.error= @contact_form.errors[:recaptcha].join(' ')
+    
+    = form.button :submit, :value => 'Send'

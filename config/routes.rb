@@ -1,4 +1,4 @@
-Starter3::Application.routes.draw do
+Parkerhill::Application.routes.draw do
   
   match 'user/edit' => 'users#edit', :as => :edit_user
   match 'signup' => 'users#new', :as => :signup
@@ -18,6 +18,8 @@ Starter3::Application.routes.draw do
   
   match 'resume' => 'pages#resume', :as => :resume
   match 'portfolio' => 'pages#portfolio', :as => :portfolio
+  match 'working' => 'pages#working', :as => :working
+  match 'thanks' => 'contact_forms#thanks', :as => :thanks
   
   match 'about' => 'pages#about', :as => :about
   #match 'contact' => 'pages#contact', :as => :contact

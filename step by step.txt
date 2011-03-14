@@ -10,6 +10,8 @@ create
   $ mv starter3/.* .
   $ rm -rf .git
   $ rmdir starter3
+  
+  global replace Starter3 / Parkerhill
 
   $ cd . #for rvm
   
@@ -38,12 +40,12 @@ initial git and deploy
   temporary url: http://floating-meadow-14.heroku.com/
   
 -----------------------------
-2/7/2010
+2/7/2011
 
-2/12/2010
+2/12/2011
   resume page with vertical text
   
-2/13/2010
+2/13/2011
   http://www.professorcloud.com/mainsite/carousel-integration.htm
   
   screen grabs:
@@ -51,7 +53,55 @@ initial git and deploy
     crop to 
   
 -----------------------------
+3/13/2010
+captcha
+  http://expressica.com/simple_captcha/
+  gem 'simple_captcha' #, :git => 'git://github.com/galetahub/simple-captcha.git'
+
+  (note, done before for Vapor)
+    $ sudo port selfupdate
+    $ sudo port install ImageMagick
+      requires https://connect.apple.com/cgi-bin/WebObjects/MemberSite.woa/wa/getSoftware?bundleID=20719
+  
+  $ rails generate simple_captcha
+  $ rake db:migrate
+  ApplicationController < ActionController::Base
+    include SimpleCaptcha::ControllerHelpers
+  in view
+    = form.simple_captcha
+  edit
+    /app/views/simple_captcha/_simple_captcha.erb
+    
+  PROBLEMS: too many variations on github with inconsistent documentation, couldnt get to work
+    suggest trying with the svn plugin rather than a gem?
+    but will it work on heroku (use rmagick gem not shell out)
+
 -----------------------------
+3/13/2010
+  recaptcha
+      http://www.google.com/recaptcha
+      create a reCAPTCHA key, global key will work across domains
+      Public key: 6LekcsISAAAAANakP5BB0Cw7SPMDWzOu2fnMWLz3 
+      Private key: 6LekcsISAAAAALip4cvKmVQtwnJ5fvKc_yqse_Gi 
+      
+      Gemfile
+          gem "recaptcha", :require => "recaptcha/rails"
+          
+      config/initializers/recaptcha.rb
+          Recaptcha.configure do |config|
+            config.public_key  = '6LekcsISAAAAANakP5BB0Cw7SPMDWzOu2fnMWLz3'
+            config.private_key = '6LekcsISAAAAALip4cvKmVQtwnJ5fvKc_yqse_Gi'
+          end
+          
+      view
+          .input{ :style => "height: 130px" }
+            %label Verify
+            = recaptcha_tags :display => {:theme => 'blackglass'}
+          
+          
+      Recaptcha::RecaptchaError (uninitialized constant Net::HTTP):
+        https://github.com/ambethia/recaptcha/issues/7
+        As a temporary hack you can add require 'net/http' just before require 'rails/all' in your Rails 3 config/application.rb
 -----------------------------
 -----------------------------
 -----------------------------

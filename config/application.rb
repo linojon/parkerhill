@@ -1,12 +1,13 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'net/http' # recaptcha bug
 require 'rails/all'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-module Starter3
+module Parkerhill
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -32,7 +33,7 @@ module Starter3
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w(jquery-ui-1.8.5.min)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery-1.4.4.min jquery-ui-1.8.9.custom.min rails)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"

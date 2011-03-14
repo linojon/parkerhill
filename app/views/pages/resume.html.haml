@@ -1,17 +1,13 @@
 - body_id 'resume_page'
-%head
-  .home_link= link_to 'home', '/'
-  .company Jonathan S. Linowes
-  .byline technical resume
-
-#overview
+= render :partial => 'page_head', :locals => {:byline => 'technical resume'}
+#main
   .section
     .pdf_link
       = link_to 'files/Jonathan_Linowes_Resume_technical2.pdf' do
         %img{:src => 'images/pdf_t64.gif', :title => 'Download as PDF'}
     %h4 Profile
     %p
-      <strong>Professional software developer and product manager</strong> with over 20 years hands-on entrepreneurial experience. Expertise with a broad range of software and Internet technologies, including Ruby on Rails, jQuery, and Cucumber.
+      <strong>Professional software developer and product manager</strong> with over 20 years hands-on entrepreneurial experience. Expertise with a broad range of software and Internet technologies, including Ruby on Rails, jQuery, and Rspec.
     %p
       I solve real world problems with practical yet elegant user-centric solutions based on business priorities. I subscribe to agile, behavior driven (BDD), TATFT, DRY, progressive enhancement, “Don't make me think”, and open source approaches to software development. I love to love my work.
   .section  
@@ -19,37 +15,50 @@
     %p
       %em Recent technical experience and skills include:
     %ul
-      %li 3+ years development using Ruby on Rails (since version 1.x) as my principal language and framework (prior work in Php, Java, and C++). Active member of the Rails community and technical ecosystem.
+      %li 4 years using Ruby on Rails (since version 1.x) as my principal language and framework (prior work in Php, Java, and C++). Active member of the Rails community and technical ecosystem.
       %li Extensive experience with jQuery javascript framework, including JQuery UI and numerous plug-ins.
-      %li Expertise with SQL databases (including mySQL, Postgres), and experience with no-SQL databases (MongoDB, CouchDB); remote and cloud-based data access (Amazon AWS); import/export/data processing; and various text-based data stores (including CSV, YAML, XML). Have worked on query optimizations, data compression, and encryption.
+      %li Expertise with SQL databases (including mySQL, Postgres); experience with no-SQL databases (MongoDB, CouchDB); cloud-based (Amazon AWS); import/export/data processing; and text-based data stores (CSV, YAML, XML). Knowledge of query optimizations, data compression, and encryption.
       %li Authentication and authorization frameworks (including authlogic, restful_authentication, devise).
       %li Visual presentation of quantitative information (including Google visualization chart api, Google maps api, and javascript graphing libraries).
       %li Ecommerce frameworks including ActiveMerchant, and gateway services (Authorize.net, Braintree)
       %li Advocate of test and behavior-driven development (BDD), including Rspec (behavioral unit testing) and Cucumber (plain text executable user scenarios). My projects average 1:1 code to test ratios.
-      %li Expertise in various CSS and HTML templating frameworks (including SASS, Compass, HAML, formtastic, Themeroller)
+      %li Expertise in various CSS and HTML templating frameworks (including SASS, Compass, HAML, formtastic, Themeroller). Worked with HTML5, CSS3, and jQuery Mobile.
       %li Practical practitioner of agile development processes including iterative design/development with rapid customer feedback.
       %li Strong experience in hosting (including cloud-based (Heroku), virtual private servers, linux/unix/osx); deployment (Capistrano); and revision control (git, SVN)
       
   .section  
-    %h4{:style => "bottom:40px"} Employment
+    %h4{:style => "bottom:120px"} Employment
     %p
-      %strong Parkerhill Technology Group<br>
+      %strong Parkerhill Technology LLC<br>
       Lyman, NH (2002 - present)
       %ul
-        %li Contract programmer specializing in Ruby, Rails and related web applications development. Active member of the Ruby on Rails community since 2007.
+        %li 
+          %em Owner.
+          Contract programmer specializing in Ruby, Rails and related web applications development. Active member of the Ruby on Rails community since 2007.
     %p
       %strong Syntrex Corporation<br>
       Manchester, NH (1998 - 2002)
       %ul
-        %li Technical operations and support manager for Internet security software company. Customer advocate and on-site troubleshooter for enterprise software.
+        %li 
+          %em Biz Dev Customer Advocate.
+          Technical operations and support manager for Internet security software company. Customer advocate and on-site troubleshooter for enterprise software.
     %p
       %strong Autodesk Corporation<br>
       Bedford, NH (1994 - 1998)
       %ul
-        %li Software developer and team leader of the Autodesk View family of software products for engineering firms.
+        %li 
+          %em Product Manager, Data Management Division.
+          Software developer and team leader of the Autodesk View family of software products for engineering firms.
+    %p
+      %strong Sirlin Corp.<br>
+      Londonderry, NH (1987 - 1994)
+      %ul
+        %li 
+          %em Owner.
+          Built leading computer-aided design (CAD) collaboration tools for engineering teams. Acquired by Autodesk in 1994.
 
   .section  
-    %h4{:style => "bottom:0px"} Education
+    %h4{:style => "bottom:-20px"} Education
     %p
       %strong Massachusetts Institute of Technology 
       (Cambridge, MA)
@@ -64,5 +73,69 @@
         %li
           %em Bachelor of Arts<br>
           Computer graphics and animation
+
+  #more_resume_button.buttons
+    = link_to 'more', '#'
+  #more_resume{:style => "display:none"}
+    .section
+      %h4{:style => "bottom:100px"} Community
+      %p
+        %em Volunteer and elected community activities include:
+        %ul
+          %li 
+            Lisbon Regional School Board (Lisbon, NH) - 
+            %em Moderator (2009 - present)
+          %li 
+            Bethlehem Hebrew Congregation (Bethlehem, NH) - 
+            %em Board of Trustees (2008 - present)
+          %li 
+            Lisbon Upstage Players (community theatre, Lisbon, NH) - 
+            %em Board of Directors (2009 - present)
+          %li 
+            Amoskeag Business Incubator (Manchester, NH) - 
+            %em Board of Directors (2003 - 2009)
+          %li 
+            Mt. Wachusetts Entrepreneurial Resource Center (Leominster, MA) - 
+            %em Board of Directors (2005 - 2007)
+          %li 
+            NH Agricultural Innovation Program - 
+            %em Advisory Board (2005 - 2007)
+          %li 
+            NH High Tech Council / MIT Enterprise Forum - 
+            %em Planning Committee (2005 - 2007)
+          %li 
+            North Country Council (Bethlehem, NH) - 
+            %em Economic Development Committee (2004 - 2007)
+          %li 
+            Software Association of NH (SwANH) - 
+            %em Board of Directors (1994 - 2009); Annual Conference Chairman (2004, 2005, 2006)
+    .section
+      %h4{:style => "bottom:20px"} Personal
+      %p
+        %em A personal note
+      %p.indent
+        About 6 years ago we moved to "north country" from southern New Hampshire, with 4 children in tow, to an old dairy farm where the farmer was retiring. We'd been coming up north for years, camping, hiking, and skiing, and one Columbus Day weekend while checking out the real estate market, somewhat spontaneously, we put a deposit on this property. The old farmhouse required extensive renovation; a few years later we moved in. 
+      %p.indent
+        I work primarily from my home-office on web application projects for various clients. I also build and run my own web apps and open-source projects. While I live too far for a daily commute to most locations in New England, I am available to be on-site several days a week, as needed.
+    .section
+      %h4{:style => "bottom:40px"} 'Net
+      %ul
+        %li
+          %a{:href => 'http://www.linkedin.com/in/linojon' } LinkedIn
+        %li
+          %a{:href => 'http://twitter.com/#!/linojon' } Twitter
+        %li
+          %a{:href => 'https://github.com/linoj'} Github
+        %li 
+          %a{:href => 'http://vaporbase.com'} Technical blog
       
+- content_for :javascript_ready do
+  :plain
+    $("#more_resume_button").click(function(){
+      $("#more_resume").show();
+      $("#more_resume_button").hide();
+      return false;
+    });
+
+  
   

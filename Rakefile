@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Starter3::Application.load_tasks
+Parkerhill::Application.load_tasks

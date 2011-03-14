@@ -8,12 +8,13 @@ class ContactForm
   extend ActiveModel::Naming
   
   attr_accessor :name, :email, :message
+  attr_accessor :recaptcha
   
   validates_presence_of :name
   validates_presence_of :email
   validates_presence_of :message
   validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
-  validates_length_of :message, :maximum => 500
+  #validates_length_of :message, :maximum => 500
   
   def initialize(attributes = {})
     attributes.each do |name, value|

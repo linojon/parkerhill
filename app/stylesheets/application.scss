@@ -38,12 +38,42 @@ body {
   left: 150px;
   top: 20px;
   a {
-    color: #aaa;
+    color: #f00;
     text-decoration: none;
   }
   a:hover {
-    color: #f00;
+    color: #ff0;
   }
+}
+
+.buttons {
+  padding-top: 1em;
+  text-align: center;
+  a {
+    $fb-font-size: 12px;
+    @include fancy-button;
+  }
+}
+
+label {
+  color: #f60; //orange
+  abbr {
+    display: none; //hide "required" asterix
+  }
+}
+
+.captcha {
+  input {
+    width: 100px;
+  }
+  img {
+    border: 1px solid #aaa;
+    vertical-align: middle;
+  }
+}
+
+input, textarea {
+  background-color: #ddc; //yellowish cream
 }
 
 #container {
@@ -64,15 +94,23 @@ body {
   position: relative;
 }
 
-$overview_width: 600px;
-#overview {
-    margin: 50px 0 0 210px;
-    width: $overview_width;
-    background-color: #333;
+$main_width: 600px;
+#main {
+  width: $main_width;
+  margin: 50px 0 0 210px;
+  background-color: #aaa; //#333;
+  color: #333;
+  padding: 1em;
+  h2 {
+    color: #a20; //burgandy
+    margin: 0;
+  }
 }
 
 #home_page {
-  #overview {
+  #main {
+    background-color: #333;
+    padding: 0;
     > div {
       background-color: #333;
       color: #ff0;
@@ -110,14 +148,6 @@ $overview_width: 600px;
       background: url("/images/red_wave.jpg") 0 0 no-repeat #000;
       color: #999;    
     }
-    .menu {
-      padding-top: 1em;
-      text-align: center;
-      a {
-        $fb-font-size: 12px;
-        @include fancy-button;
-      }
-    }
   }
 
   #contact {
@@ -130,6 +160,7 @@ $overview_width: 600px;
      background: url("/images/contact.jpg") 0 0 no-repeat black; 
      position: absolute;
      right: 0;
+     outline: none;
     }
     a:hover {
       background: url("/images/contact_glow.jpg") 0 0 no-repeat black; 
@@ -141,10 +172,9 @@ $overview_width: 600px;
 }
 
 #resume_page {
-  #overview {
+  #main {
     margin-right: 140px;
     width: 640px;
-    padding: 1em;
     background-color: #ddc; //yellowish cream
     color: #333;
     p, ul {
@@ -176,8 +206,12 @@ $overview_width: 600px;
 }
 
 #carousel_page {
+  #main {
+    background-color: #333;
+    padding: 0;
+  }
   #carousel {
-    width: $overview_width; 
+    width: $main_width; 
     height: 300px;
     //background: #000;
     overflow: scroll;
@@ -194,3 +228,12 @@ footer {
   }
 }
 
+#contact_page {
+  #main {
+    background-color: #333;
+    color: #aaa;
+    a {
+      color: #aaa;
+    }
+  }
+}

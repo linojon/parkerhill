@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -32,12 +32,16 @@ gem 'capistrano'
 
 gem 'haml'
 gem "haml-rails"      #generators
+gem 'slim', :require => 'slim/rails'
 gem 'compass', ">= 0.10.5"
 gem 'fancy-buttons'
 gem 'simple_form'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'meta_where'
 gem 'rdiscount' #aka markdown
+#gem 'simple_captcha' #, :git => 'git://github.com/galetahub/simple-captcha.git'
+#gem 'rmagick', :require => false #for simple_captcha
+gem "recaptcha", :require => "recaptcha/rails"
 
 group :development, :test, :cucumber do
   gem 'ruby-debug19'

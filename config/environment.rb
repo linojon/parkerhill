@@ -2,7 +2,7 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Starter3::Application.initialize!
+Parkerhill::Application.initialize!
 
 # # use gmail for outgoing mail
 # ActionMailer::Base.delivery_method = :smtp

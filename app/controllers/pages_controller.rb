@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def portfolio
     render
   end
+  
+  def working
+    render
+  end
 end
