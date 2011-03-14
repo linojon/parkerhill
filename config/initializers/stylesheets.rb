@@ -11,5 +11,5 @@ Sass::Plugin.on_updating_stylesheet do |template, css|
 end
 
 Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',
-                                             :urls => ['/stylesheets'],
+                                             :urls => ['/stylesheets/compiled'],
                                              :root => "#{Rails.root}/tmp")

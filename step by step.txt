@@ -103,6 +103,27 @@ captcha
         https://github.com/ambethia/recaptcha/issues/7
         As a temporary hack you can add require 'net/http' just before require 'rails/all' in your Rails 3 config/application.rb
 -----------------------------
+
+  $ git push heroku master
+  $ heroku rake db:migrate
+  $ heroku restart
+  
+  compass support
+  ref http://lds.li/post/673242899/compass-with-rails-3-on-heroku
+    edit config/compass.rb
+        css_dir = "tmp/stylesheets/compiled"
+        
+    create config/initializers/stylesheets.rb
+        require 'fileutils'
+        FileUtils.mkdir_p(Rails.root.join("tmp", "stylesheets"))
+        Sass::Plugin.on_updating_stylesheet do |template, css|
+          puts "Compiling #{template} to #{css}"
+        end
+        Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',
+                                                     :urls => ['/stylesheets/compiled'],
+                                                     :root => "#{Rails.root}/tmp")
+        
+  
 -----------------------------
 -----------------------------
 -----------------------------
