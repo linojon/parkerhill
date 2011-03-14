@@ -56,7 +56,7 @@ initial git and deploy
 3/13/2010
 captcha
   http://expressica.com/simple_captcha/
-  gem 'simple_captcha' #, :git => 'git://github.com/galetahub/simple-captcha.git'
+  gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 
   (note, done before for Vapor)
     $ sudo port selfupdate
@@ -71,6 +71,8 @@ captcha
     = form.simple_captcha
   edit
     /app/views/simple_captcha/_simple_captcha.erb
+  in controller#create
+    if simple_captcha_valid?
     
   PROBLEMS: too many variations on github with inconsistent documentation, couldnt get to work
     suggest trying with the svn plugin rather than a gem?
@@ -102,6 +104,11 @@ captcha
       Recaptcha::RecaptchaError (uninitialized constant Net::HTTP):
         https://github.com/ambethia/recaptcha/issues/7
         As a temporary hack you can add require 'net/http' just before require 'rails/all' in your Rails 3 config/application.rb
+        
+      contact_forms_controller.rb#create
+        if verify_recaptcha(:model => @contact_form, :attribute => :recaptcha, :message => "doesn't match, please try again") && 
+        
+        
 -----------------------------
 
   $ git push heroku master

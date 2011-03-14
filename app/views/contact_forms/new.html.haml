@@ -9,8 +9,9 @@
     = form.input :name, :input_html => {:size => 40}
     = form.input :email, :input_html => {:size => 40}
     = form.input :message, :as => :text, :input_html => {:cols => 50}
+    = show_simple_captcha(:label => "(human authentication)")
     =# form.simple_captcha
-    .input{ :style => "min-height: 130px" }
+    -# .input{ :style => "min-height: 130px" }
       %label Verify
       = recaptcha_tags :display => {:theme => 'blackglass'}
       - if @contact_form.errors[:recaptcha]

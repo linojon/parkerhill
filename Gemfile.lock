@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/galetahub/simple-captcha.git
+  revision: b8493942e9a9bb58c58712fa21d41963330da6aa
+  specs:
+    simple_captcha (0.1.1)
+
+GIT
   remote: git://github.com/odorcicd/authlogic.git
   revision: a087ad0cba3c165ba22fcf176c28b6f7517931e8
   branch: rails3
@@ -140,7 +146,7 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     rdiscount (1.6.8)
-    recaptcha (0.3.1)
+    rmagick (2.13.1)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -211,10 +217,11 @@ DEPENDENCIES
   nifty-generators
   rails (= 3.0.5)
   rdiscount
-  recaptcha
+  rmagick
   rspec-rails (>= 2.2.0)
   ruby-debug19
   shoulda
+  simple_captcha!
   simple_form
   slim
   spork

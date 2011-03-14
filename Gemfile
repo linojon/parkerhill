@@ -39,9 +39,13 @@ gem 'simple_form'
 gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => 'rails3'
 gem 'meta_where'
 gem 'rdiscount' #aka markdown
-#gem 'simple_captcha' #, :git => 'git://github.com/galetahub/simple-captcha.git'
-#gem 'rmagick', :require => false #for simple_captcha
-gem "recaptcha", :require => "recaptcha/rails"
+gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
+  #:git => 'git://github.com/macarthy/simple-captcha-mirror.git' #no gem here
+ #'git://github.com/joloudov/simple_captcha.git' 
+  #, :git => 'git://github.com/eshopworks/simple_captcha.git' 
+  #, :git => 'git://github.com/galetahub/simple-captcha.git'
+gem 'rmagick', :require => false #for simple_captcha
+#gem "recaptcha", :require => "recaptcha/rails"
 
 group :development, :test, :cucumber do
   gem 'ruby-debug19'

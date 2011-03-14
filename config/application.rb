@@ -1,6 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'net/http' # recaptcha bug
+#require 'net/http' # recaptcha bug
 require 'rails/all'
 
 # If you have a Gemfile, require the gems listed there, including any gems
