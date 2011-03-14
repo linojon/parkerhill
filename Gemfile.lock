@@ -171,7 +171,6 @@ GEM
       json_pure
       rubyzip
     shoulda (2.11.3)
-    simple_captcha (0.1.3)
     simple_form (1.3.1)
     slim (0.9.1)
       temple (~> 0.1.8)
@@ -216,7 +215,6 @@ DEPENDENCIES
   rspec-rails (>= 2.2.0)
   ruby-debug19
   shoulda
-  simple_captcha
   simple_form
   slim
   spork

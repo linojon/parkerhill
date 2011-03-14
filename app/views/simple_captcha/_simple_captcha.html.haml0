@@ -2,6 +2,6 @@
   %label.text
     =# simple_captcha_options[:label]
     Verify
-  = @simple_captcha_options[:field]
-  =raw @simple_captcha_options[:image]
+  = simple_captcha_options[:field]
+  = simple_captcha_options[:image]
   %span.hint please enter the characters you see in the image

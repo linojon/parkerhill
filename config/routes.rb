@@ -27,6 +27,7 @@ Parkerhill::Application.routes.draw do
 
   root :to => "pages#home"
   
+  match 'simple_captcha/:action', :controller => 'simple_captcha', :as => 'simple_captcha'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

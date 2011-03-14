@@ -74,9 +74,7 @@ captcha
   in controller#create
     if simple_captcha_valid?
     
-  PROBLEMS: too many variations on github with inconsistent documentation, couldnt get to work
-    suggest trying with the svn plugin rather than a gem?
-    but will it work on heroku (use rmagick gem not shell out)
+  WORKS BUT NOT ON HEROKU
 
 -----------------------------
 3/13/2010
@@ -129,9 +127,27 @@ captcha
         Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',
                                                      :urls => ['/stylesheets/compiled'],
                                                      :root => "#{Rails.root}/tmp")
-        
-  
+
 -----------------------------
+3/14
+  simple_captcha via SVN
+  
+  $ rails plugin install svn://rubyforge.org/var/svn/expressica/plugins/simple_captcha
+  $ rake simple_captcha:setup
+  $ rails generate migration create
+      error
+  [restore setup i did for simple_captcha gem]
+  
+  simple_captcha_setup.rb
+      def simple_captcha_key #:nodoc
+        #session[:simple_captcha] ||= Digest::SHA1.hexdigest(Time.now.to_s + session.session_id.to_s)
+        session[:simple_captcha] ||= Digest::SHA1.hexdigest(Time.now.to_s + request.session_options[:id].to_s)
+      end
+      
+  routes.rb
+      match 'simple_captcha/:action', :controller => 'simple_captcha'
+      
+
 -----------------------------
 -----------------------------
 resume
