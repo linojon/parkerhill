@@ -15,7 +15,7 @@
   speed: 0.1, // 0.2 default
   //buttonLeft: $("#left_but"),
   //buttonRight: $("#right_but"),
-  //altBox: $("#alt_text"),
+  altBox: $("#alt_text"),
   //titleBox: $("#title_text")
   });
 
@@ -23,14 +23,18 @@
 
 #main
   #carousel{ :style => "width: 600px; height: 400px; overflow:scroll"}
-    = image_tag "portfolio/windaction-thumb.jpg", :alt => "Image 1 description", :title => "Image 1 title", :class => 'cloudcarousel'
-    = image_tag "portfolio/alumbiz-thumb.jpg", :alt => "Image 2 description", :title => "Image 2 title", :class => 'cloudcarousel'
-    = image_tag "portfolio/careshare-thumb.jpg", :alt => "Image 3 description", :title => "Image 3 title", :class => 'cloudcarousel'
-    = image_tag "portfolio/husage-thumb.jpg", :alt => "Image 4 description", :title => "Image 4 title", :class => 'cloudcarousel'
-    = image_tag "portfolio/31north-thumb.jpg", :alt => "Image 5 description", :title => "Image 5 title", :class => 'cloudcarousel'
+    = image_tag "portfolio/windaction-thumb.jpg", :alt => "Industrial Wind Action News and Information (www.windaction.org)", :title => "Industrial Wind Action Group (www.windaction.org)", :class => 'cloudcarousel'
+    = image_tag "portfolio/alumbiz-thumb.jpg", :alt => "Alubmiz Business Social Network (www.alumbiz.com)", :title => "Alubmiz Business Social Network (www.alumbiz.com)", :class => 'cloudcarousel'
+    = image_tag "portfolio/careshare-thumb.jpg", :alt => "Careshare Home Medical Network for Children (www.careshare-cmhi.org)", :title => "Careshare Home Medical Network for Children (www.careshare-cmhi.org)", :class => 'cloudcarousel'
+    = image_tag "portfolio/husage-thumb.jpg", :alt => "Husage Satellite Internet Usage Monitor (www.husage.net)", :title => "Husage Satellite Internet Usage Monitor (www.husage.net)", :class => 'cloudcarousel'
+    = image_tag "portfolio/31north-thumb.jpg", :alt => "31North Commercial Building Control & Analytics (www.31north.com)", :title => "31North Commercial Building Control & Analytics (www.31north.com)", :class => 'cloudcarousel'
+    = image_tag "portfolio/vaporbase-thumb.jpg", :alt => "Vaporbase Blog (vaporbase.com)", :title => "Vaporbase Blog (vaporbase.com)", :class => 'cloudcarousel'
+    = image_tag "portfolio/reviewramp-thumb.jpg", :alt => "ReviewRamp Business Collaboration Site (reviewramp.com)", :title => "ReviewRamp Business Collaboration Site (reviewramp.com)", :class => 'cloudcarousel'
   -#%input#left_but{ :type => :button, :value => "Left" }
   -#%input#right_but{ :type => :button, :value => "Right" }
   -#%p#title_text
-  -#%p#alt_text
-
+  %p#alt_text
+  %p{:style => 'font-size:small'}
+    Use mouse-wheel to spin the carousel
+  
   

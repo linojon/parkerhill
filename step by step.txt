@@ -50,7 +50,17 @@ initial git and deploy
   
   screen grabs:
     browser size: 1020 x 800
-    crop to 
+    crop to 0.8 ratio (eg 875 x 700)
+    resize to 1000 x 800
+    thumbnail .jpg 
+      canvas bkdg #333
+      image size 190 x 150
+      canvas size 200 x 162
+      add glow: 
+        3 - 65% - 5 - 0
+        #66cccc
+        
+    
   
 -----------------------------
 3/13/2010
@@ -78,6 +88,8 @@ captcha
 
 -----------------------------
 3/13/2010
+  resume "more" sections    
+  
   recaptcha
       http://www.google.com/recaptcha
       create a reCAPTCHA key, global key will work across domains
@@ -106,7 +118,9 @@ captcha
       contact_forms_controller.rb#create
         if verify_recaptcha(:model => @contact_form, :attribute => :recaptcha, :message => "doesn't match, please try again") && 
         
-        
+      contact_form.rb model
+          attr_accessor :recaptcha
+          
 -----------------------------
 
   $ git push heroku master
@@ -147,38 +161,46 @@ captcha
   routes.rb
       match 'simple_captcha/:action', :controller => 'simple_captcha'
       
-
+  segmentation fault
+      http://stackoverflow.com/questions/2838307/why-is-this-rmagick-call-generating-a-segmentation-fault
+      $ sudo port uninstall ImageMagick
+      $ sudo port edit ImageMagick
+      Add --disable-openmp to configure.args (near line 100)
+      $ sudo port install ImageMagick
+      $ gem uninstall rmagick
+      $ gem install rmagick
+      
 -----------------------------
 -----------------------------
 resume
   support non-css3 browser
   
-  add "more" with sections:
-      volunteer
-      personal
       
 social
-  facebook "Like"
+  open graph protocol tags http://developers.facebook.com/docs/opengraph/
+  facebook "Like" http://www.webmonkey.com/2010/04/adding-facebook-like-buttons-to-your-site-is-damn-easy/
   linked in profile
   twitter follow
   
       
 portfolio
     reviewramp
-    windaction
-    careshare
-    alumbiz
     abi
-    31north
     myvbi
-    husage
     
-    gridify
     
   ?
+    gridify
     formatastic renderers
     saasramp
     iwafetch
+    
+    -windaction
+    -careshare
+    -alumbiz
+    -31north
+    -husage
+    -vaporbase
     
 about this site
   put link (button) under benny

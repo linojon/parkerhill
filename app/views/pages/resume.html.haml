@@ -132,7 +132,7 @@
 - content_for :javascript_ready do
   :plain
     $("#more_resume_button").click(function(){
-      $("#more_resume").show();
+      $("#more_resume").fadeIn(2000);
       $("#more_resume_button").hide();
       return false;
     });

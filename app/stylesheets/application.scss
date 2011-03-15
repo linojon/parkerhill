@@ -10,6 +10,12 @@ $page_bkgd: #000;
 $footer_bkgd: #000;
 $footer_color: #888;
 
+$yellow: #ff0;
+$orange: #f60;
+$red: #f00;
+$cream: #ddc;
+$burgandy: #a20;
+
 // layout
 $page_width: 950px;
 
@@ -21,7 +27,7 @@ body {
 
 .company {
   text-align: right;
-  color: #ff0;
+  color: $yellow;
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -29,20 +35,20 @@ body {
 }
 .byline {
   text-align: right;
-  color: #f60;
+  color: $orange;
   font-size: 18px;
 }
 .home_link {
   //float: left;
   position: fixed;
-  left: 150px;
+  left: 20px;
   top: 20px;
   a {
-    color: #f00;
+    color: $red;
     text-decoration: none;
   }
   a:hover {
-    color: #ff0;
+    color: $yellow;
   }
 }
 
@@ -56,7 +62,7 @@ body {
 }
 
 label {
-  color: #f60; //orange
+  color: $orange;
   abbr {
     display: none; //hide "required" asterix
   }
@@ -73,7 +79,7 @@ label {
 }
 
 input, textarea {
-  background-color: #ddc; //yellowish cream
+  background-color: $cream;
 }
 
 #container {
@@ -102,7 +108,7 @@ $main_width: 600px;
   color: #333;
   padding: 1em;
   h2 {
-    color: #a20; //burgandy
+    color: $burgandy;
     margin: 0;
   }
 }
@@ -113,7 +119,7 @@ $main_width: 600px;
     padding: 0;
     > div {
       background-color: #333;
-      color: #ff0;
+      color: $yellow;
       padding: 1em 1em 1em 45px;
       border-bottom: 3px solid black;
       h4 {
@@ -160,15 +166,19 @@ $main_width: 600px;
   }
 
   #contact {
-    margin-top: 20px;
+    //margin-top: 20px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    
     height: 50px;
     a {
      display: block;
      width: 150px;
      height: 50px;
      background: url("/images/contact.jpg") 0 0 no-repeat black; 
-     position: absolute;
-     right: 0;
+     //position: absolute;
+     //right: 0;
      outline: none;
     }
     a:hover {
@@ -184,7 +194,7 @@ $main_width: 600px;
   #main {
     margin-right: 140px;
     width: 640px;
-    background-color: #ddc; //yellowish cream
+    background-color: $cream;
     color: #333;
     p, ul {
       font-size: 80%;
@@ -214,9 +224,10 @@ $main_width: 600px;
   }
 }
 
-#carousel_page {
+#portfolio_page {
   #main {
     background-color: #333;
+    color: #666;
     padding: 0;
   }
   #carousel {
@@ -224,6 +235,16 @@ $main_width: 600px;
     height: 300px;
     //background: #000;
     overflow: scroll;
+  }
+  #alt_text {
+    margin: auto;
+    text-align: center;
+    color: $yellow;
+  }
+}
+
+#working_page {
+  #main {
   }
 }
 

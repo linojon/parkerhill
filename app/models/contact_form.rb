@@ -8,7 +8,7 @@ class ContactForm
   extend ActiveModel::Naming
   
   attr_accessor :name, :email, :message
-  attr_accessor :recaptcha
+  #attr_accessor :recaptcha
   
   validates_presence_of :name
   validates_presence_of :email
