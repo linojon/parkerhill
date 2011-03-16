@@ -1,4 +1,11 @@
 %head
-  .home_link= link_to 'back home', '/'
+  .home_link
+    = link_to 'back home', '/'
+    %br
+    = link_to_unless_current 'resume', '/resume'
+    %br
+    = link_to_unless_current 'portfolio', '/portfolio'
+    %br
+    = link_to_unless_current 'working', '/working'
   .company Jonathan S. Linowes
   .byline #{byline}
