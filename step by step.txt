@@ -170,6 +170,15 @@ captcha
       $ gem uninstall rmagick
       $ gem install rmagick
       
+3/18
+  handle bad and old urls
+    public.404.html
+        <script type="text/javascript">
+          <!--
+          window.location = "http://parkerhill.com/"
+          //-->
+        </script>
+      
 -----------------------------
 -----------------------------
 resume
@@ -188,3 +197,5 @@ about this site
   - technology
   - github link
   
+redirect all 404s to home
+
