@@ -1,16 +1,10 @@
-%footer
-  #benny
-    = image_tag "/images/rooster.jpg"
+#benny
+  = image_tag "/images/rooster.jpg"
+  %fb:like( href="http://parkerhill.com" layout="button_count" show_faces="true" width="450" font="lucida grande" colorscheme="dark")
 
-  #footer{:style => 'display:none'}
-    .copyright
-      copyright &copy; 2011 Parkerhill Technology Group LLC
-      -# #{APP_CONFIG[:company_name]}
-
--# content_for :javascript_ready do
-  :plain
 :javascript
-    $("#benny > img").click(function(){
-      $("#footer").toggle();
-    });
+  $("#benny>img").click(function(){
+    $(this).effect("bounce", { times:3 }, 300);  
+  });
+  
     

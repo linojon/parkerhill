@@ -182,25 +182,6 @@ social
   linked in profile
   twitter follow
   
-      
-portfolio
-    reviewramp
-    abi
-    myvbi
-    
-    
-  ?
-    gridify
-    formatastic renderers
-    saasramp
-    iwafetch
-    
-    -windaction
-    -careshare
-    -alumbiz
-    -31north
-    -husage
-    -vaporbase
     
 about this site
   put link (button) under benny

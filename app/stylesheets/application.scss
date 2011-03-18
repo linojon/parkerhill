@@ -260,20 +260,21 @@ $main_width: 600px;
   }
 }
 
-footer {
-  position: fixed;
-  bottom: 5px;
-  left: 0;
+#copyright {
+  float: right;
+  margin-top: 40px;
   color: #444;
-  .copyright {
-    padding-left: 1em;
-  }
 }
 
 #benny {
-  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
 }
-
+.fb_edge_widget_with_comment {
+  display: block !important;
+  margin-left: 20px !important;
+}
 #contact_page {
   #main {
     background-color: #333;
