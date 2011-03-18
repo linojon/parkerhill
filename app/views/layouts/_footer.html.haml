@@ -1,10 +1,12 @@
 #benny
   = image_tag "/images/rooster.jpg", :id => 'benny_img'
-  %fb:like( href="http://parkerhill.com" layout="button_count" width="150" font="lucida grande" colorscheme="dark")
+  %a( href="http://www.linkedin.com/in/linojon" style="display:block; margin-left:38px" title="Find me on LinkedIn")
+    %img( src="http://developer.linkedin.com/servlet/JiveServlet/download/1101-3-1058/LinkedIn_Logo16px.png" alt="LinkedIn")
+  %a( href="http://www.twitter.com/linojon" style="display:block; margin-left:35px" title="Follow me on Twitter")
+    %img( src="http://twitter-badges.s3.amazonaws.com/t_small-c.png" alt="Twitter")
+  %fb:like( href="http://parkerhill.com" layout="button_count" width="150" font="lucida grande" colorscheme="dark" title="Like me on Twitter")
 
 :javascript
   $("#benny_img").click(function(){
     $(this).effect("bounce", { times:3 }, 300);
   });
-  
-    
