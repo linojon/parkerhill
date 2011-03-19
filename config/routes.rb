@@ -16,6 +16,7 @@ Parkerhill::Application.routes.draw do
 
   match 'pages/:action', :controller => 'pages'
   
+  match 'about' => 'pages#about', :as => :about
   match 'resume' => 'pages#resume', :as => :resume
   match 'portfolio' => 'pages#portfolio', :as => :portfolio
   match 'working' => 'pages#working', :as => :working

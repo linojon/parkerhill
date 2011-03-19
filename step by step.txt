@@ -170,7 +170,31 @@ captcha
       $ gem uninstall rmagick
       $ gem install rmagick
       
+3/16,17
+  add fb:like tag
+      ref: http://www.webmonkey.com/2010/04/adding-facebook-like-buttons-to-your-site-is-damn-easy/
+      
+      %fb:like( href="http://parkerhill.com" layout="button_count" width="150" font="lucida grande" colorscheme="dark")
+      
+  
 3/18
+  fb graph tags
+      ref: http://developers.facebook.com/docs/opengraph/
+      
+      get fb id by going to my fb page, open a photo album and look at the url
+      
+      %meta( property="og:title" content="Parkerhill Tech (Jonathan Linowes)")
+      %meta( property="og:type" content="company")
+      %meta( property="og:url" content="http://parkerhill.com")
+      %meta( property="og:image" content="http://parkerhill.com/images/rooster.jpg")
+      %meta( property="og:site_name" content="Parkerhill")
+      %meta( property="fb:admins" content="1089890933")
+      %meta( property="og:description"
+            content="Hello, my name is Jon Linowes. I build web applications. I have expertise with a broad range of software and Internet technologies including Ruby on Rails, jQuery, and Rspec.")
+      
+  lint it
+      http://developers.facebook.com/tools/lint
+      
   handle bad and old urls
     public.404.html
         <script type="text/javascript">
@@ -179,23 +203,33 @@ captcha
           //-->
         </script>
       
------------------------------
------------------------------
-resume
-  support non-css3 browser
+  $ heroku rename parkerhill
+  $ heroku addons:add custom_domains
+  $ heroku domains:add www.parkerhill.com
+  $ heroku domains:add parkerhill.com
   
+  add A record verio.parkerhill.com to verio's ip
+  change cnames (smtp etc) to verio.parkerhill.com
+  add A records for
+      75.101.163.44
+      75.101.145.87
+      174.129.212.2
       
-social
-  open graph protocol tags http://developers.facebook.com/docs/opengraph/
-  facebook "Like" http://www.webmonkey.com/2010/04/adding-facebook-like-buttons-to-your-site-is-damn-easy/
-  linked in profile
-  twitter follow
+  linked in 
+  twitter
   
+  support non-css3 browser: resume page
+    create css3.scss and conditionally load based on modernizr class "transforms"
+    if ($("html").hasClass("csstransforms")) {
+      $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '/stylesheets/compiled/css3.css') );
+    }
     
-about this site
-  put link (button) under benny
-  - technology
-  - github link
-  
-redirect all 404s to home
+  about this site page
+ 
+---
+  fb insights
+      http://www.facebook.com/insights/
 
+      
+-----------------------------
+-----------------------------

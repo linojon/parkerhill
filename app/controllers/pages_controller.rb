@@ -14,4 +14,8 @@ class PagesController < ApplicationController
   def working
     render
   end
+  
+  def about
+    render
+  end
 end

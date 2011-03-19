@@ -1,0 +1,32 @@
+@import "compass";
+#resume_page #main {
+  h4 {
+    @include rotate(-90deg, 0, 65px);
+    position: absolute;
+    bottom: 0;
+    margin: 1.3em 0;
+  }
+  #profile {
+  }
+  #skills {
+    h4 { bottom: 250px; }
+  }
+  #employment {
+    h4 { bottom: 120px; }
+  }
+  #education {
+    h4 { bottom: -20px; }
+  }
+  #opensource {
+    h4 { bottom: 400px; }
+  }
+  #community {
+    h4 { bottom: 100px; }
+  }
+  #personal {
+    h4 { bottom: 20px; }
+  }
+  #socialnet {
+    h4 { bottom: 40px; }
+  }
+}
