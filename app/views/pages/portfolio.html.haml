@@ -34,7 +34,11 @@
   -#%input#right_but{ :type => :button, :value => "Right" }
   -#%p#title_text
   %p#alt_text
-  %p{:style => 'font-size:small'}
-    Use mouse-wheel to spin the carousel
   
+:javascript
+  if (!Modernizr.touch){
+    $("#main").append(
+      '<p style="font-size:small">Use mouse-wheel to spin the carousel</p>'
+    );
+  }
   

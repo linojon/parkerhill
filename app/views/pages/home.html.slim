@@ -50,7 +50,13 @@ head
   
 - content_for :javascript_ready do
   |
-    $("#main").accordion({
-      event: "mouseover"
-    });
+    if (Modernizr.touch){
+      $("#main").accordion({
+        event: "click"
+      });
+    } else {
+      $("#main").accordion({
+        event: "mouseover"
+      });
+    }
   

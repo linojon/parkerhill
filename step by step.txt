@@ -214,6 +214,10 @@ captcha
       75.101.163.44
       75.101.145.87
       174.129.212.2
+  change www.parkerhill.com
+      proxy.heroku.com
+  check it
+      $ host www.parkerhill.com 
       
   linked in 
   twitter

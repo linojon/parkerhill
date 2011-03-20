@@ -198,7 +198,7 @@
           %a{:href => 'http://vaporbase.com'} Technical blog
       
 - content_for :javascripts do
-  if ($("html").hasClass("csstransforms")) {
+  if (Modernizr.csstransforms){
   $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '/stylesheets/compiled/css3.css') );
   }
 - content_for :javascript_ready do
