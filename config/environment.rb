@@ -15,3 +15,6 @@ Parkerhill::Application.initialize!
 #   :authentication => 'plain',
 #   :enable_starttls_auto => true
 # }
+
+Haml::Template.options[:ugly] = false
+  
