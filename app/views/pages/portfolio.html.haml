@@ -1,4 +1,6 @@
 - body_id 'portfolio_page'
+- title 'website portfolio', false
+
 - content_for :javascript_includes do
   = javascript_include_tag 'cloud-carousel.1.0.4.min'
   = javascript_include_tag 'jquery.mousewheel.min'
@@ -19,7 +21,7 @@
   //titleBox: $("#title_text")
   });
 
-= render :partial => 'page_head', :locals => {:byline => 'website portfolio'}
+= render :partial => 'page_head'
 
 #main
   #carousel{ :style => "width: 600px; height: 400px; overflow:scroll"}

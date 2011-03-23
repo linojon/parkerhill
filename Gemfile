@@ -32,7 +32,7 @@ gem 'capistrano'
 
 gem 'haml'
 gem "haml-rails"      #generators
-gem 'slim', :require => 'slim/rails'
+#gem 'slim', :require => 'slim/rails'
 gem 'compass', ">= 0.10.5"
 gem 'fancy-buttons'
 gem 'simple_form'

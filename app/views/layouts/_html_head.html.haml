@@ -1,5 +1,6 @@
 %title
-  = yield(:title) || APP_CONFIG[:app_name]
+  = APP_CONFIG[:app_name]
+  = ' : ' + yield(:title) if yield(:title).present?
 %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
 %meta( name="keywords" content="Jonathan Linowes, Parkerhill, Lyman, New Hampshire, Ruby on Rails, Ruby, Rails, jQuery, web apps, software development, agile, BDD, expert")
 %meta( name="description" content="Hello, my name is Jon Linowes. I build web applications. I have expertise with a broad range of software and Internet technologies including Ruby on Rails, jQuery, and Rspec.")
