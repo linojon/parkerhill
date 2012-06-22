@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>step by step.txt</string>
+	<string>app/views/pages/resume.html.haml</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -33,7 +33,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
 		<key>app/helpers/layout_helper.rb</key>
 		<dict>
@@ -168,14 +168,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>32</integer>
+				<integer>10</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>39</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>108</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>20</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>133</integer>
+				<key>line</key>
+				<integer>39</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>39</integer>
+			</dict>
 		</dict>
 		<key>app/views/pages/working.html.haml</key>
 		<dict>
@@ -284,6 +300,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1648, 346}, {860, 1045}}</string>
+	<string>{{1682, 109}, {860, 1045}}</string>
 </dict>
 </plist>
