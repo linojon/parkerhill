@@ -18,4 +18,8 @@ class PagesController < ApplicationController
   def about
     render
   end
+  
+  def test
+    render
+  end
 end
